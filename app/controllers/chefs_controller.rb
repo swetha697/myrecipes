@@ -30,7 +30,11 @@ class ChefsController < ApplicationController
       render 'edit'
     end  
   end
-  
+
+  def index
+    @chefs = Chef.all
+  end
+
   private
   
   def chef_params
