@@ -1,4 +1,4 @@
-$navbar-default-bg: green;
+$navbar-default-bg: #008B8B;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -14,7 +14,7 @@ $navbar-default-bg: green;
 #logo {
   float: left;
   font-size: 1.5em;
-  color: yellow;
+  color: #CCCC00;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: bold;
@@ -39,7 +39,7 @@ $navbar-default-bg: green;
   font-weight: bold;
 }
 .btn-xlarge {
-  background-color: green;
+  background-color: #008B8B;
 }
 
 footer {
@@ -57,7 +57,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #222;
+  color: #fff;
 }
 
 footer small {
@@ -76,7 +76,7 @@ footer ul li {
   color: #fff;
 }
 .well a {
-  color: green;
+  color: #008B8B;
 }
 .description {
   margin-top: 0;

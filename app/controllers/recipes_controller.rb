@@ -14,13 +14,13 @@ class RecipesController < ApplicationController
 
 	def create
 		@recipe = Recipe.new(recipe_params)
-		@recipe.chef = Chef.first
-		  if @recipe.save
+		@recipe.chef = current_chef
+		 if @recipe.save
 		    flash[:success] = "Recipe was created successfully!"
 		    redirect_to recipe_path(@recipe)
-		  else
+		 else
 		    render 'new'
-		  end
+		 end
 	end
 
 	def edit
