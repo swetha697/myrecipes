@@ -107,3 +107,21 @@ footer ul li {
 .navbar-default .navbar-nav > li > a {
   color: #fff;
 }
+
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: pink;
+  border-radius: 10px;
+}
+.input_checkbox input {
+  width: auto !important;
+}
