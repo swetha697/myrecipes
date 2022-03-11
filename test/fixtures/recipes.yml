@@ -1,0 +1,7 @@
+<% 70.times do |n| %>
+recipe_<%= n %>:
+ id: <%= n %>
+ name: <%= "recipe_ #{n}" %>
+ description: <%= "Creation of Recipe_#{n} successful" %>
+ chef_id: <%= n %>
+<% end %>

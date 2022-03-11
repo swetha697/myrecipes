@@ -1,0 +1,6 @@
+<% 25.times do |n| %>
+recipeingredient_<%= n %>:
+ id: <%= n %>
+ recipe_id: <%= n %>
+ ingredient_id: <%= n %>
+<% end %>

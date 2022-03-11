@@ -1,0 +1,8 @@
+<% 100.times do |n| %>
+chef_<%= n %>:
+ id: <%= n %>
+ chefname: <%= "Chef #{n}" %>
+ email: <%= "chef-#{n}@example.com" %>
+ password_digest: <%= BCrypt::Password.create('testpassword') %>
+ admin: <%= n==1 ? true: false %>
+<% end %>

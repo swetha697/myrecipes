@@ -1,0 +1,7 @@
+<% 25.times do |n| %>
+comment_<%= n %>:
+ id: <%= n %>
+ description: <%= "Commenting for test_#{n}" %>
+ chef_id: <%= n %>
+ recipe_id: <%= n %>
+<% end %>

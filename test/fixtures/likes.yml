@@ -1,0 +1,10 @@
+<% 2.times do |n| %>
+like_<%= n %>:
+  id: <%= n %>
+  like: <%= n%2 == 0 ? true : false %>
+  chef_id: <%= n %>
+  recipe_id: <%= n %>
+<% end %>
+
+
+

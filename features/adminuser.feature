@@ -1,0 +1,38 @@
+Feature: Homepage
+@f1
+Scenario: Adminuser
+When I visit home page
+When I follow "Log in"
+Then I should see "Email"
+Then I should see "Password"
+Then I fill in "session_email" with "chef-1@example.com"
+Then I fill in "session_password" with "testpassword"
+Then I press "Log in"
+Then I should see "You have successfully logged in"
+Then I should see "Chef chef 1's profile"
+Then I should see "Chef 1's Profile Admin"
+Then I follow "All Recipes" 
+Then I follow "recipe_ 4"
+Then I should see "Created by:"
+Then I should see "Edit this recipe"
+Then I should see "Delete this recipe"
+Then I should see "Return to recipes listing"
+When I follow "Edit this recipe"
+Then I fill in "recipe_name" with "recipe_4"
+Then I press "Update Recipe"
+Then I should see "Recipe was updated successfully!"
+Then I fill in "comment_description" with "commenting out for testing"
+Then I press "Submit Comment"
+Then I should see "Comment was created successfully"
+Then I clickicon "glyphicon-thumbs-up"
+Then I should see "Your selection was succesful"
+Then I clickicon "glyphicon-thumbs-up"
+Then I should see "You can only like/dislike a recipe once"
+Then I follow "ingredient_ 4"
+Then I should see "Recipe's containing ingredient_ 4"
+Then I follow "recipe_4"
+Then I follow "Return to recipes listing"
+Then I follow "Chefs"
+Then I should see "Chef 0"
+
+
